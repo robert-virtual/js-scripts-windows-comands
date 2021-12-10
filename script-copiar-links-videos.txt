@@ -1,0 +1,11 @@
+const p = document.createElement('p');
+document.querySelectorAll(".video-item-icon").forEach(e => p.append(e.onclick));
+const splited = p.textContent.split('\'');
+splited.forEach( (e,i) => {
+	
+	if(i%2 != 0) {
+		document.body.prepend(e)
+	} else {
+		document.body.prepend(document.createElement('br'))
+	} 
+})

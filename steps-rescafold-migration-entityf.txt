@@ -1,0 +1,7 @@
+A previous migration called 'InitialDBCreation' was already applied to the target database. 
+If you meant to re-scaffold 'InitialDBCreation', 
+revert it by running: 
+- Update-Database -TargetMigration $InitialDatabase 
+
+then delete '202110120312489_InitialDBCreation1.cs' and again run:
+- Add-Migration InitialDBCreation 
